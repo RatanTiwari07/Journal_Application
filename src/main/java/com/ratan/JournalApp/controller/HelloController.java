@@ -3,7 +3,7 @@ package com.ratan.JournalApp.controller;
 import com.ratan.JournalApp.entity.JournalEntry;
 import com.ratan.JournalApp.service.JournalEntryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,5 +22,13 @@ public class HelloController {
         return "added";
 
     }
+
+
+    @GetMapping("/")
+    public String demo (){
+
+        return "i'mm here ";
+    }
+
 
 }

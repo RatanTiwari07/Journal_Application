@@ -9,12 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 @Data
 @NoArgsConstructor
-public class JournalEntry {
+public class User {
 
     @Id
     private ObjectId id;
-    private String title;
-    private String content;
+    private String name;
+    private String password;
 
 
 
